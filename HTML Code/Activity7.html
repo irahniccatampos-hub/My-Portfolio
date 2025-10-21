@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    </head>
+<body>
+    <h2>To-Do Task Manager DOM Challenge</h2>
+  <input type="add" id="taskInput" placeholder="Add Task">
+  <button id="addBtn">Add Task</button>
+
+  <button id="markBtn">Mark All as Done</button>
+  <button id="clearBtn">Clear Completed</button>
+
+  <ul id="To-Do Task List"></ul>
+
+</body>
+</html>
+
+<script>
+    const input = document.getElementById('taskInput');
+    const addBtn = document.getElementById('addBtn');
+    const markBtn = document.getElementById('markBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const taskList = document.getElementById('taskList');
+
+    addBtn.addEventListener('click', () => {
+      const itemText = input.value.trim();
+      if (itemText !== "") {
+        const li = document.createElement('li');
+        li.textContent = itemText;
+        taskList.appendChild(li);
+        input.value = "";
+      }
+    });

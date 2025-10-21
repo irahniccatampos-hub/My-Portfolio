@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e1a5dd; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+body.darkmode {
+  background-color: #2d042f; 
+  color: white;
+}
+
+img {
+  width: 260px;
+  height: 260px;
+  border-radius: 30%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}

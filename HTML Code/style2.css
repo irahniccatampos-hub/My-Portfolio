@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #EA9087;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background: #EA9087;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #EFAF96, #EA9087);
+  color: white;
+  border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+/* Container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Aside (Welcome Section with Picture) */
+aside {
+  background: white;
+  padding: 5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+aside img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #F8B195;
+  margin-bottom: 1rem;
+}
+
+aside h2 {
+  margin: 1rem 0;
+  color: #EA9087;
+  font-size: 1.6rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+table th {
+  background: #EA9087;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main Content */
+main section, 
+main article {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+main section:hover, 
+main article:hover {
+  transform: translateY(-4px);
+}
+
+main h2 {
+  margin-bottom: 1rem;
+  color: #EA9087;
+  font-size: 1.6rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background: #EFAF96;
+  color: black;
+  font-size: 0.95rem;
+  border-radius: 12px 12px 0 0;
+}
+
+
+/* Table */
+
+
+/* Form */
+form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+form label {
+  font-weight: 600;
+  color: #333;
+}
+
+form input, 
+form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  padding: 0.75rem;
+  background: #EA9087;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #EFAF96;
+}
